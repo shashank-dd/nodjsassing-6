@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 
 dotenv.config();
 //connect to DB
-mongoose.connect("mongodb://localhost/blogs",{ useNewUrlParser: true, useUnifiedTopology: true }, () => {
+mongoose.connect("mongodb+srv://shashi:shashi@12@cluster0.r8l6edo.mongodb.net/table?retryWrites=true&w=majority",{ useNewUrlParser: true, useUnifiedTopology: true }, () => {
    
     console.log('connected to DB')
 })
@@ -28,3 +28,4 @@ app.get("*",(req,res)=>{
 
 
 app.listen(3000, () => console.log('Server running......'));
+module.exports=app

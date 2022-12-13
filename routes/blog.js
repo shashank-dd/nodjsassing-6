@@ -68,7 +68,7 @@ router.get("/blog",async(req,res)=>{
            
       
           
-        
+          
               const user =await Blog.find()
               res.json({
                  
@@ -123,7 +123,7 @@ router.delete("/blog/:id",async(req,res)=>{
      
   })
 router.post('/blog',async(req,res)=>{
-   
+   console.log(1)
     console.log(req.body)
     try{
         const user=await Blog.create(req.body)

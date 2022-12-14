@@ -71,11 +71,11 @@ router.get("/blog",async(req,res)=>{
           
           
               const user =await Blog.find()
-              res.send("fello")
-//               res.json({
+
+              res.json({
                  
-//                  user:user 
-//               })
+                 user:user 
+              })
           }catch(e){
                  res.status(400).json({
                   msg:e.message

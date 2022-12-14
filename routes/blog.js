@@ -71,7 +71,7 @@ router.get("/blog",async(req,res)=>{
           
           
               const user =await Blog.find()
-              res.json("fello")
+              res.send("fello")
 //               res.json({
                  
 //                  user:user 

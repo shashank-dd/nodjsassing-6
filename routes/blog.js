@@ -21,11 +21,11 @@ router.get("/blog",async(req,res)=>{
         
             
               const user =await Blog.find({topic:search})
-              res.json("fello")
-//               res.json({
-//                   users:users,
-//                  user:user 
-//               })
+              
+              res.json({
+                  users:users,
+                 user:user 
+              })
           }catch(e){
                  res.status(400).json({
                   msg:e.message
@@ -71,10 +71,11 @@ router.get("/blog",async(req,res)=>{
           
           
               const user =await Blog.find()
-              res.json({
+              res.json("fello")
+//               res.json({
                  
-                 user:user 
-              })
+//                  user:user 
+//               })
           }catch(e){
                  res.status(400).json({
                   msg:e.message

@@ -20,7 +20,7 @@ const blogRoute = require('./routes/blog');
 //Router MIddlewares
 // app.use(express.json());
 app.use(cors({
-    origin:"https://projectassing-1.vercel.app"
+    origin:"https://todolistaforcousins.onrender.com/blog"
 }))
 app.use('/', blogRoute);
 app.get("*",(req,res)=>{

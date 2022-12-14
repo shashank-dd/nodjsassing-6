@@ -21,6 +21,7 @@ router.get("/blog",async(req,res)=>{
         
             
               const user =await Blog.find({topic:search})
+              
               res.json({
                   users:users,
                  user:user 
@@ -70,6 +71,7 @@ router.get("/blog",async(req,res)=>{
           
           
               const user =await Blog.find()
+
               res.json({
                  
                  user:user 
